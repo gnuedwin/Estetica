@@ -17,7 +17,8 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    name: "default", 
+    //Cambio la pagina que quiero ejecutar al inicio
+    pattern: "{controller=Mantenedor}/{action=Guardar}/{id?}");
 
 app.Run();
